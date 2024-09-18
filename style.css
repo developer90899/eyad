@@ -1,0 +1,263 @@
+:root {
+  ---primary-color: #0a74da;
+  --secondary-color: #ff6f61;
+  --dark-color: #1e1e1e;
+  --light-color: #f4f4f4;
+  --white-color: #fff;
+  --body-font: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: var(--light-color);
+  font-family: var(--body-font);
+}
+
+header {
+  width: 100%;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 999;
+}
+
+.proooclic {
+  color: var(---primary-color);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.menu {
+  margin-right: 50px;
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.menu a {
+  color: var(--dark-color);
+  font-weight: 600;
+  padding: 5px 10px;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+
+.menu a:hover {
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+/* start main */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* start home */
+a {
+  text-decoration: none;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.home h2 {
+  color: var(---primary-color);
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.home h3 {
+  color: var(--secondary-color);
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.low {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.main-btn {
+  color: white;
+  background-color: #ff6f61;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.main-btn:hover {
+  color: white;
+  background-color: var(---primary-color);
+}
+
+.social-icons {
+  font-size: 30px;
+  color: var(--dark-color);
+  margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+  color: #1e1e1e;
+  transition: 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* end home */
+/* About me start */
+section {
+  padding-bottom: 3rem;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.title::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: var(---primary-color);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cards,
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  transition: 0.2s;
+}
+.card,
+.project-card {
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 30px;
+  width: 300px;
+  transition: 0.2s;
+}
+.card:hover , .project-card:hover {
+  transform: translateY(-20px);
+}
+
+.icon {
+  font-size: 3rem;
+  color: var(---primary-color);
+}
+
+.helper {
+  font-weight: 800;
+  font-size: 2.2vh;
+}
+
+/* About me end */
+/* Skills start */
+
+.helper {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+/* Skills end */
+/* Progects start */
+.ds div {
+  width: 40vh;
+  display: inline-block;
+  background-color: whitesmoke;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.cards div h4 {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.cards div a {
+  color: var(---primary-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Progects end */
+/* start testimotionals */
+
+/* end testimotionals */
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.plusbtn {
+  background-color: var(---primary-color);
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: 0.2s;
+  color: white;
+  margin-bottom: 5rem;
+}
+.plusbtn:hover {
+  background-color: var(--secondary-color);
+}
+/* start footer */
+footer {
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+footer p {
+  color: white;
+}
+.span {
+  color: var(---primary-color);
+}
+footer .social-icons a {
+  color: white;
+}
+/* end footer */
+/* end main */
